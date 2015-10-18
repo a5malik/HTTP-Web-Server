@@ -274,7 +274,7 @@ void dostuff (int sock)
 	 }
 	 else
 	 {
-		 sprintf(str , "HTTP/%s 200 OK\r\nContent-type: text/html\r\nContent-length: %d\r\n\r\n", hi.version, hi.filesize);
+		 sprintf(str , "HTTP/%s 200 OK\r\nContent-length: %d\r\n\r\n", hi.version, hi.filesize);
 		printf(str);
 		 write(sock, str, strlen(str));
 		 while((n=read(fd,&c, 1) == 1))
@@ -288,7 +288,7 @@ void dostuff (int sock)
 	 }
 }
 	
-	
+	//
 	
    // int n;
    // char c;
