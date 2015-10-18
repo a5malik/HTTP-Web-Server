@@ -165,7 +165,7 @@ int main(int argc, char *argv[])
 						{
 							if(!strcmp(namelist[i]->d_name, fname))
 							{
-								printf("file fucking found %s having size %d\n", fname, st.st_size);
+								printf("file ducking found %s having size %d\n", fname, st.st_size);
 								found = 't';
 								strcpy(namebuf, fname);
 								*size = st.st_size;
@@ -175,7 +175,7 @@ int main(int argc, char *argv[])
 					}
 					if(found == 'f')
 					{
-						printf("no such file fucking found %s \n", fname);
+						printf("no such file ducking found %s \n", fname);
 						return 0;
 					}
 					
@@ -198,7 +198,7 @@ int main(int argc, char *argv[])
 						{
 							if(!strcmp(namelist[i]->d_name, dir_name))
 							{
-								printf("directory fucking found %s\n", dir_name);
+								printf("directory ducking found %s\n", dir_name);
 								chdir(dir_name);
 								found = 't';
 								break;
@@ -207,7 +207,7 @@ int main(int argc, char *argv[])
 					}
 					if(found == 'f')
 					{
-						printf("no such fucking directory %s\n", dir_name);
+						printf("no such ducking directory %s\n", dir_name);
 						return 0;
 					}
 			  }
